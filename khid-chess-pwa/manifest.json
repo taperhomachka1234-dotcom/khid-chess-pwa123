@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Хід · аналіз шахових позицій",
+  "short_name": "Хід",
+  "lang": "uk",
+  "description": "Аналіз шахових позицій зі скріншотів у браузері",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111719",
+  "theme_color": "#111719",
+  "icons": [
+    {"src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "share_target": {
+    "action": "./share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [{
+        "name": "image",
+        "accept": ["image/*", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".bmp", ".heic", ".heif"]
+      }]
+    }
+  }
+}
